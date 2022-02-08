@@ -28,7 +28,7 @@ pub fn get_args() -> MyResult<Config> {
         )
         .arg(
             Arg::new("number")
-                .short("n")
+                .short('n')
                 .long("number")
                 .help("Number lines")
                 .takes_value(false)
@@ -36,7 +36,7 @@ pub fn get_args() -> MyResult<Config> {
         )
         .arg(
             Arg::new("number_nonblank")
-                .short("b")
+                .short('b')
                 .long("number-nonblank")
                 .help("Number non-blank lines")
                 .takes_value(false),
