@@ -19,7 +19,7 @@ pub fn get_args() -> MyResult<Config> {
         .author("An Author <here@m.e>")
         .about("Kissa (English: cat)")
         .arg(
-            Arg::with_name("files")
+            Arg::new("files")
                 .value_name("FILE")
                 .help("Input file(s)")
                 .multiple(true)
@@ -27,7 +27,7 @@ pub fn get_args() -> MyResult<Config> {
                 .allow_invalid_utf8(true),
         )
         .arg(
-            Arg::with_name("number")
+            Arg::new("number")
                 .short("n")
                 .long("number")
                 .help("Number lines")
@@ -35,7 +35,7 @@ pub fn get_args() -> MyResult<Config> {
                 .conflicts_with("number_nonblank"),
         )
         .arg(
-            Arg::with_name("number_nonblank")
+            Arg::new("number_nonblank")
                 .short("b")
                 .long("number-nonblank")
                 .help("Number non-blank lines")
