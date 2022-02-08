@@ -23,7 +23,7 @@ pub fn get_args() -> MyResult<Config> {
                 .value_name("FILE")
                 .help("Input file(s)")
                 .number_of_values(1),
-                .multiple(true)
+                .multiple(true),
                 .default_value("-")
                 .allow_invalid_utf8(true),
         )
